@@ -9,7 +9,7 @@ public class ReverseString {
 
 	public void usingBuffer() {
 
-		String given = "Vedhagiri";
+		String given = "Welcome to CSS Corp";
 
 		StringBuffer buffer = new StringBuffer();
 		buffer.append(given);
@@ -19,7 +19,7 @@ public class ReverseString {
 
 	public void usingOwnLogic() {
 
-		String given = "Vedhagiri";
+		String given = "Welcome to CSS Corp";
 
 		char[] characterArray = given.toCharArray();
 
@@ -36,21 +36,18 @@ public class ReverseString {
 
 	public void usingCollections() {
 
-		String given = "Vedhagiri";
-		char[] array = given.toCharArray();
-
-		List list = new ArrayList<Character>();
-
-		for (Character character : array) {
-			list.add(character);
+		String given= "Vedha";
+		char[] array=given.toCharArray();
+		List l=new ArrayList<Character>();
+		for(Character c:array){
+			l.add(c);
 		}
-
-		Collections.reverse(list);
-		ListIterator iterator = list.listIterator();
-
-		while (iterator.hasNext()) {
+		Collections.reverse(l);
+		ListIterator iterator=l.listIterator();
+		while(iterator.hasNext()){
 			System.out.print(iterator.next());
 		}
+		
 	}
 
 	public static void main(String[] args) {
