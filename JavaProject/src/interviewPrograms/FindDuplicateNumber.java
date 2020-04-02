@@ -1,21 +1,19 @@
 package interviewPrograms;
 
+import java.util.Set;
 import java.util.TreeSet;
 
 public class FindDuplicateNumber {
-	
 	public static void main(String[] args) {
 		
-		int arr [] = {1,2,3,4,5,6,7,8,9,5,3};
+		int[] arr = {1,2,3,4,5,1,3,7};
+		Set <Integer> dup = new TreeSet<Integer>();
 		
-		TreeSet<Integer> unique= new TreeSet<Integer>();
-		
-		for(int a: arr){
-			if(!unique.add(a)){
-				System.out.println("Duplicate entry is: "+a);
+		for(int a:arr){
+			if(!dup.add(a)){
+				System.out.println("Duplicate is :" +a);
 			}
 		}
-		
 	}
 
 }
