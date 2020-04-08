@@ -2,20 +2,18 @@ package oops;
 
 public class MethodOverloading {
 	
-	void operator (String str1, String str2){
-		String s = str1+str2;
-		System.out.println("Concatinated String: " +s);
+	static int add(int a, int b){
+		return a+b;
 	}
 	
-	void operator(int a, int b){
-		int c=a+b;
-		System.out.println("Sum= "+ c);
+	static double add(double a, int b, int c){
+		return a+b+c;
 	}
-	
 	
 	public static void main(String[] args) {
-		MethodOverloading obj =  new MethodOverloading();
-		obj.operator("Vedha","Giri");
-		obj.operator(2, 3);
+		
+		System.out.println(add(11,12));
+		System.out.println(add(10,11,12));
+		
 	}
 }
