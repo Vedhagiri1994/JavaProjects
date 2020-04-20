@@ -14,7 +14,6 @@ public class ReverseString {
 		StringBuffer buffer = new StringBuffer();
 		buffer.append(given);
 		System.out.println(buffer.reverse());
-
 	}
 
 	public void usingOwnLogic() {
